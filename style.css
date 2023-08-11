@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f4f4f4;
+}
+
+.todo-card {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#searchField {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  width: 60%;
+  max-width: 400px;
+  font-size: 1em;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#searchField::placeholder {
+  color: #888;
+}
+
+#searchField:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}

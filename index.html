@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetching Todo Data Example</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <!-- pass it to the onload=loadTodoData() -->
+  <body>
+    <!-- Button to fetch the todos -->
+    <button id="fetchDataBtn" onclick="loadTodoData()">Fetch Todos</button>
+
+    <div class="search-container">
+      <input
+        type="text"
+        id="searchField"
+        placeholder="Search for todos..."
+        oninput="filterTodos()"
+      />
+    </div>
+
+    <!-- Container for displaying the fetched todos -->
+    <div id="todoDataDisplay"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
