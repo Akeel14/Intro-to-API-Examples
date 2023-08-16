@@ -2,6 +2,31 @@
 let allTodos = [];
 let isLoading = false; // to track the loading state
 
+
+// function fetchData() {
+//   // The endpoint for fetching sample data (in this case, a list of todos)
+//   const apiEndpoint = 'https://jsonplaceholder.typicode.com/users';
+
+//   fetch(apiEndpoint)
+//     .then((response) => {
+//       // Check if the fetch was successful
+//       if (!response.ok) {
+//         throw new Error('Network response was not ok');
+//       }
+//       return response.json();
+//     })
+//     .then((data) => {
+//       // Process and display the fetched data
+//       displayData(data);
+//     })
+//     .catch((error) => {
+//       console.error(
+//         'There was a problem with the fetch operation:',
+//         error.message
+//       );
+//     });
+// }
+
 async function loadTodoData() {
   const apiEndpoint = 'https://jsonplaceholder.typicode.com/todos';
   const dataContainer = document.getElementById('todoDataDisplay');
